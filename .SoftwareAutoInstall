@@ -45,10 +45,11 @@ sleep 3
             sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager -y  ### PPA-Manager
             sudo add-apt-repository -y ppa:notepadqq-team/notepadqq -y ### Notepadqq
             sudo apt-add-repository -y ppa:teejee2008/ppa -y ### conky-manager
-			sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-4 -y ### Libre Office 4.4
-			sudo add-apt-repository -y ppa:venerix/pkg -y -y ### tv-maxe
-			sudo add-apt-repository -y ppa:webupd8team/popcorntime -y ### popcorn-time
-			sudo add-apt-repository -y ppa:noobslab/icons -y
+	    sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-4 -y ### Libre Office 4.4
+	   #sudo add-apt-repository ppa:libreoffice/libreoffice-prereleases ### LibreOffice 5.4
+	    sudo add-apt-repository -y ppa:venerix/pkg -y -y ### tv-maxe
+	    sudo add-apt-repository -y ppa:webupd8team/popcorntime -y ### popcorn-time
+	    sudo add-apt-repository -y ppa:noobslab/icons -y
             #############################################################################
             sleep 0.3
             sudo apt-get install synaptic deluge-torrent y-ppa-manager openjdk-7-jre oracle-java8-installer ultra-flat-icons-orange -y
@@ -64,9 +65,9 @@ sleep 3
             sleep 0.3
 			#############################################################################
 			sudo apt-get install libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 -y 
-            sudo apt-get install libswscale-extra-2 ubuntu-restricted-extras libxine1-ffmpeg -y 
-            sudo apt-get install mencoder flac faac faad sox ffmpeg2theora -y 
-            sudo apt-get install libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev vlc -y
+                        sudo apt-get install libswscale-extra-2 ubuntu-restricted-extras libxine1-ffmpeg -y 
+                        sudo apt-get install mencoder flac faac faad sox ffmpeg2theora -y 
+                        sudo apt-get install libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev vlc -y
 			sleep 0.3
 			#############################################################################
 			sudo apt-get install shotwell gimp gimp-data gimp-plugin-registry gimp-data-extras -y
@@ -79,18 +80,18 @@ sleep 3
             echo $"Update and Upgrade"
             sleep 0.5
             sudo apt-get update && sudo apt-get upgrade -y
-			sudo apt-get dist-upgrade
+	    sudo apt-get dist-upgrade
 			#############################################################################
 			sudo apt-get install conky-manager -y
-            sudo apt-get install ttf-mscorefonts-installer -y
+                        sudo apt-get install ttf-mscorefonts-installer -y
 			sudo apt-get install jedit netbeans eclipse bluefish notepadqq -y
 			sudo apt-get install clementine audacious -y
 			sudo apt-get install tv-maxe -y
 			sudo apt-get install popcorn-time -y
-            sudo apt-get install ultra-flat-icons-orange -y
+                        sudo apt-get install ultra-flat-icons-orange -y
 			#############################################################################
 			sudo apt-get install iftop iotop htop -y 
-            sudo apt-get install hddtemp nmap hardinfo -y
+                        sudo apt-get install hddtemp nmap hardinfo -y
 			#############################################################################
 	        echo $"Enable Firewall"
             sudo ufw enable
